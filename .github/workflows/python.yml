@@ -29,5 +29,5 @@ jobs:
       env:
         xmu_username: ${{ secrets.xmu_username }}
         xmu_password: ${{ secrets.xmu_password }}
-        #server_chan_secret: ${{ secrets.server_chan_secret }}    # 如果你不需要通过 Server 酱 (http://sc.ftqq.com/) 进行打卡结果提醒，请注释此行
+        server_chan_secret: ${{ secrets.server_chan_secret }}    # 如果你不需要通过 Server 酱 (http://sc.ftqq.com/) 进行打卡结果提醒，请注释此行
       run: python workflow.py
